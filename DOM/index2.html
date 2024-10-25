@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="meuBotão">Clique aqui</button>
+    <div id="quadrado"></div>
+
+</body>
+<script>
+    var botao = document.getElementById('meuBotão')
+    var quadrado = document.getElementById('quadrado')
+    botao.addEventListener('click',function(){
+        quadrado.style.borderRadius='200px'
+        quadrado.style.backgroundColor ='red'
+    })
+</script>
+<style>
+    #quadrado{
+        display: block;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        background-color: gray;
+    }
+</style>
+</html>

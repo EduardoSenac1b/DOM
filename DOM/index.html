@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <h2 id="description">dale</h2>
+
+</body>
+<script>
+    let promptDes = prompt("qual o seu nome?");
+    let corFav = prompt('Qual a sua cor favorita? (em inglês)');
+
+
+    let titulo = document.getElementById('title');
+    titulo.textContent = `Bem vindo ${promptDes}`;
+    titulo.style.color = corFav;
+</script>
+</html>
